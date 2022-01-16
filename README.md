@@ -1,2 +1,2 @@
-# shop-fashion
-Repository for lessons "GB"
+##### THE BRAND OF LUXERIOUS FASHION
+Project for Shop Fashion
