@@ -1,0 +1,157 @@
+.nav {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.nav__inner {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 44px;
+  height: 38px;
+}
+
+.nav__logo-img {
+  max-height: 100%;
+}
+
+.nav__search {
+  width: 26px;
+  margin-right: auto;
+}
+
+.nav__search-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.nav__login-icon {
+  width: 29px;
+  height: 29px;
+}
+
+.nav__basket {
+  margin-left: 33px;
+  position: relative;
+
+  &::after {
+    content: attr(data-basket-amount);
+    width: 19px;
+    height: 19px;
+    color: #fff;
+    background-color: $pink;
+    position: absolute;
+    top: -8px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 12px;
+    line-height: 11px;
+  }
+}
+
+.nav__basket-icon {
+  width: 32px;
+  height: 29px;
+  fill: #E8E8E8;
+}
+
+.nav__toggle-btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  display: block;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::after,
+  &::before {
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 15px;
+    background-color: #E8E8E8;
+    content: '';
+    display: block;
+    position: absolute;
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+    will-change: transform, box-shadow;
+  }
+
+  &::before {
+    box-shadow: 0 10px #e8e8e8, 0 -10px #e8e8e8;
+  }
+}
+
+@media (min-width: 700px) {
+}
+
+@media (min-width: 992px) {
+  .nav__search {
+    margin-left: 41px;
+  }
+  .nav__login {
+    margin-left: 33px;
+  }
+  .nav__basket {
+    padding-right: 11px;
+
+    &::after {
+      left: 22px;
+    }
+  }
+}
+
+@media (min-width: 1620px) {
+  .nav__inner {
+    position: relative;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav__login {
+    margin-left: 25px;
+  }
+  .nav__basket {
+    width: 12%;
+    margin-left: 15px;
+    text-align: center;
+
+    &::after {
+      right: 21%;
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .nav__search {
+    margin-left: 41px;
+  }
+  .nav__basket,
+  .nav__login {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  .nav__logo {
+    width: 12%;
+    text-align: center;
+  }
+  .nav__search {
+    width: 12%;
+    margin-left: 15px;
+  }
+}

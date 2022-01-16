@@ -1,0 +1,145 @@
+.custom-control {
+  margin-bottom: 0;
+  position: relative;
+  min-height: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  user-select: none;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+
+  &.disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+}
+
+.custom-control-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 35px;
+  height: 1.25rem;
+  opacity: 0;
+
+  &:checked ~ {
+    .custom-control-label {
+      color: $blackColor;
+
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    .custom-radio:hover {
+      color: $blackColor;
+
+      &::before {
+        background: linear-gradient(180deg, $primaryColor 0%, $primaryColor 0.01%, #FF6022 100%);
+      }
+
+      &::after {
+        background-color: #fff
+      }
+    }
+  }
+
+  &:disabled ~ .custom-control-label {
+    opacity: .5;
+  }
+}
+
+.custom-control-label {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+
+  &::before,
+  &::after {
+    font-weight: normal;
+    display: block;
+    position: absolute;
+    content: '';
+
+  }
+
+  &::before {
+    color: #fff;
+    left: 0;
+    font-size: 17px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+  }
+
+  &::after {
+    left: 0;
+    pointer-events: none;
+  }
+}
+
+.custom-radio {
+  margin-left: 30px;
+
+  &::before {
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    left: 5px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, $primaryColor 0%, $primaryColor 0.01%, #FF6022 100%);
+  }
+
+  &::after {
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    border-radius: 50%;
+    border: 1px solid $primaryColor;
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+  }
+
+  &:hover {
+    color: $blackColor;
+
+    &::after {
+      border-color: $primaryDarkColor;
+      background-color: $primaryLightColor;
+    }
+  }
+}
+
+.custom-checkbox {
+  margin-left: 30px;
+
+  &::before,
+  &::after {
+    top: 3px;
+  }
+
+  &::after {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid $primaryColor;
+    border-radius: 4px;
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+  }
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    background: $checkboxType;
+    border-radius: 4px;
+  }
+
+  &:hover {
+    color: $blackColor;
+
+    &::after {
+      border-color: $primaryDarkColor;
+      background-color: $primaryLightColor;
+    }
+  }
+}

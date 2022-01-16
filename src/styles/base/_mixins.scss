@@ -1,0 +1,36 @@
+@function rem($px) {
+  @return ($px / 16) +rem;
+}
+
+@mixin hidePlaceholder {
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+@mixin actionBefore($widthPX,$heightPX) {
+  width: $widthPX;
+  height: $heightPX;
+  display: block;
+  background: url(../img/decor/subtract_2.svg) no-repeat;
+  background-size: contain;
+  content: '';
+  @content;
+}

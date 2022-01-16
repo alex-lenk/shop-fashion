@@ -1,0 +1,16 @@
+// Color system
+$blackColor: #222 !default;
+$pink:    #F16D7F !default;
+
+// Body
+$body-color: $blackColor;
+$body-bg: #fff;
+
+// Typography
+$font-family-sans-serif: lato, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-weight: 700 !default;
+
+// Links
+$link-hover-decoration: none;
+$link-color: $blackColor;
+$link-decoration: none;

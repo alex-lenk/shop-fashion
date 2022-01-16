@@ -1,0 +1,27 @@
+@import 'base/settings';
+
+/* BEGIN Bootstrap Reboot v5.1.3 (https://getbootstrap.com/) */
+@import "vendor/bootstrap-5.1.3/functions";
+@import "vendor/bootstrap-5.1.3/variables";
+@import "vendor/bootstrap-5.1.3/mixins";
+@import "vendor/bootstrap-5.1.3/root";
+@import "vendor/bootstrap-5.1.3/reboot";
+/* END */
+
+/* base styles */
+@import "base/mixins";
+@import "base/general";
+@import "base/fonts";
+@import "base/button";
+@import "base/forms";
+
+/* section styles */
+@import "section/nav";
+@import "section/menu";
+@import "section/home__header";
+@import "section/offers";
+@import "section/product";
+@import "section/featured";
+@import "section/subscribe";
+@import "section/footer";
+
