@@ -65,6 +65,7 @@ const HTML = () => {
 const SCSS = () => {
   return src(pathFiles.css.src)
     .pipe(sass().on('error', sass.logError))
+    .pipe(dest(pathFiles.css.build))
     .pipe(autoprefixer())
     .pipe(rename({
       suffix: ".min"

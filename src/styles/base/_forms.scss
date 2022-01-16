@@ -1,0 +1,40 @@
+.form__field {
+  background: #E1E1E1;
+  font-size: 14px;
+  font-weight: 400;
+  color: $blackColor;
+  border: 0;
+  height: 40px;
+  border-radius: 32px;
+  display: block;
+  width: 100%;
+  padding: .375rem 24px;
+  line-height: 1.5;
+  background-clip: padding-box;
+  transition: border-color .3s ease-in-out;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 0;
+  }
+
+  &:focus {
+    background-color: #fff;
+  }
+}
+
+.form__placeholder {
+  @include hidePlaceholder {
+    color: $blackColor;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+  }
+
+  &:focus {
+    @include hidePlaceholder {
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+    }
+  }
+}

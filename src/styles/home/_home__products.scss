@@ -1,0 +1,36 @@
+.home__products {
+  margin-bottom: 95px;
+}
+
+.home__products-title {
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.home__products-text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .home__products-text {
+    margin-bottom: 44px;
+  }
+}
+
+@media (max-width: 699px) {
+  .home__products-text {
+    margin-bottom: 63px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  .home__products-text {
+    margin-bottom: 71px
+  }
+}
