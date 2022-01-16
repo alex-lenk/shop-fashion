@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Переменные цветов и перебивка настроек и Bootstrap */
 /* BEGIN Bootstrap Reboot v5.1.3 (https://getbootstrap.com/) */
 :root {
   --bs-blue: #0d6efd;
@@ -587,7 +589,74 @@ h4 {
   opacity: 0;
   transition: opacity .3s ease-in-out; }
 
-/* General section */
+/* components styles */
+.breadcrumb {
+  max-width: 50%;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center; }
+
+.breadcrumb__item {
+  font-weight: 700;
+  font-size: 14px;
+  color: #F16D7F; }
+  .breadcrumb__item:not(:last-child) {
+    margin-right: 4px; }
+    .breadcrumb__item:not(:last-child)::after {
+      content: '/';
+      display: inline-flex;
+      color: #636363;
+      font-weight: 300; }
+
+.breadcrumb__link {
+  font-weight: 300;
+  color: #636363;
+  transition: color .3s ease-in-out; }
+  .breadcrumb__link:hover {
+    color: #F16D7F; }
+
+.pagination {
+  padding: 0 12px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid #EBEBEB;
+  list-style: none; }
+
+.pagination__item {
+  font-weight: 300;
+  color: #C4C4C4; }
+
+.pagination__link {
+  padding: 9px 11px;
+  display: block;
+  font-weight: 300;
+  color: inherit; }
+
+.pagination__link-current {
+  color: #EF5B70; }
+
+.pagination__ellipsis {
+  display: block;
+  color: inherit;
+  user-select: none; }
+
+.pagination__link-arrow {
+  padding-left: 2px;
+  padding-right: 2px; }
+
+.pagination__link-prev,
+.pagination__link-next {
+  width: 14px;
+  height: 14px; }
+
+.pagination__link-next {
+  transform: rotate(180deg); }
+
+/* General section styles */
 .top {
   background-color: #222;
   position: fixed;
@@ -1019,7 +1088,37 @@ h4 {
     margin-bottom: 40px;
     justify-content: center; } }
 
-/* Home section */
+.header__page {
+  margin-top: 75px;
+  margin-bottom: 51px;
+  background-color: #F8F3F4; }
+
+.header__page-inner {
+  min-height: 148px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center; }
+
+.header__page-title {
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #F16D7F;
+  text-transform: uppercase;
+  flex-grow: 1; }
+
+.catalog {
+  margin-bottom: 96px; }
+
+.catalog__pagination {
+  margin-top: 48px;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+
+/* Home section styles */
 .home__header {
   margin-top: 75px;
   margin-bottom: 65px;
@@ -1188,3 +1287,20 @@ h4 {
 @media (min-width: 700px) and (max-width: 991px) {
   .offers {
     margin-bottom: 67px; } }
+
+.catalog__sorting {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px; }
+
+.catalog__filter-label {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center; }
+
+.catalog__filter-decor {
+  width: 15px;
+  height: 15px;
+  margin-left: 11px; }

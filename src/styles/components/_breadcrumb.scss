@@ -1,0 +1,36 @@
+.breadcrumb {
+  max-width: 50%;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb__item {
+  font-weight: 700;
+  font-size: 14px;
+  color: $pink;
+
+  &:not(:last-child) {
+    margin-right: 4px;
+
+    &::after {
+      content: '/';
+      display: inline-flex;
+      color: #636363;
+      font-weight: 300;
+    }
+  }
+}
+
+.breadcrumb__link {
+  font-weight: 300;
+  color: #636363;
+  transition: color .3s ease-in-out;
+
+  &:hover {
+    color: $pink;
+  }
+}

@@ -1,0 +1,23 @@
+.header__page {
+  margin-top: 75px;
+  margin-bottom: 51px;
+  background-color: #F8F3F4;
+}
+
+.header__page-inner {
+  min-height: 148px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header__page-title {
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: $pink;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
