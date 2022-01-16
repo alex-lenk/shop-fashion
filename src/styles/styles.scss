@@ -15,13 +15,15 @@
 @import "base/button";
 @import "base/forms";
 
-/* section styles */
-@import "section/nav";
+/* General section */
+@import "section/top";
 @import "section/menu";
-@import "section/home__header";
-@import "section/offers";
 @import "section/product";
 @import "section/featured";
 @import "section/subscribe";
 @import "section/footer";
 
+/* Home section */
+@import "home/home__header";
+@import "home/home__products";
+@import "home/offers";

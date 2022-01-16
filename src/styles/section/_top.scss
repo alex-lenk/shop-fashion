@@ -1,4 +1,4 @@
-.nav {
+.top {
   background-color: #222;
   position: fixed;
   top: 0;
@@ -7,37 +7,37 @@
   z-index: 5;
 }
 
-.nav__inner {
+.top__inner {
   height: 75px;
   display: flex;
   align-items: center;
 }
 
-.nav__logo {
+.top__logo {
   width: 44px;
   height: 38px;
 }
 
-.nav__logo-img {
+.top__logo-img {
   max-height: 100%;
 }
 
-.nav__search {
+.top__search {
   width: 26px;
   margin-right: auto;
 }
 
-.nav__search-icon {
+.top__search-icon {
   width: 26px;
   height: 26px;
 }
 
-.nav__login-icon {
+.top__login-icon {
   width: 29px;
   height: 29px;
 }
 
-.nav__basket {
+.top__basket {
   margin-left: 33px;
   position: relative;
 
@@ -57,13 +57,13 @@
   }
 }
 
-.nav__basket-icon {
+.top__basket-icon {
   width: 32px;
   height: 29px;
   fill: #E8E8E8;
 }
 
-.nav__toggle-btn {
+.top__toggle-btn {
   width: 32px;
   height: 32px;
   padding: 0;
@@ -95,17 +95,14 @@
   }
 }
 
-@media (min-width: 700px) {
-}
-
 @media (min-width: 992px) {
-  .nav__search {
+  .top__search {
     margin-left: 41px;
   }
-  .nav__login {
+  .top__login {
     margin-left: 33px;
   }
-  .nav__basket {
+  .top__basket {
     padding-right: 11px;
 
     &::after {
@@ -115,16 +112,16 @@
 }
 
 @media (min-width: 1620px) {
-  .nav__inner {
+  .top__inner {
     position: relative;
   }
 }
 
 @media (max-width: 991px) {
-  .nav__login {
+  .top__login {
     margin-left: 25px;
   }
-  .nav__basket {
+  .top__basket {
     width: 12%;
     margin-left: 15px;
     text-align: center;
@@ -136,21 +133,21 @@
 }
 
 @media (max-width: 699px) {
-  .nav__search {
+  .top__search {
     margin-left: 41px;
   }
-  .nav__basket,
-  .nav__login {
+  .top__basket,
+  .top__login {
     display: none;
   }
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  .nav__logo {
+  .top__logo {
     width: 12%;
     text-align: center;
   }
-  .nav__search {
+  .top__search {
     width: 12%;
     margin-left: 15px;
   }

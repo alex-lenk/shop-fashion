@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta content="telephone=no" name="format-detection">
+
   <title>The brand of Luxerious fashion</title>
   <meta name="description" content="“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“">
 
-  <link rel="stylesheet" href="assets/css/styles.min.css?ver=1.4">
+  <link rel="stylesheet" href="assets/css/styles.min.css?ver=1.5">
 
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -21,36 +22,36 @@
   <meta name="theme-color" content="#222222">
 </head>
 <body>
-<nav class="nav">
-  <div class="nav__inner container">
-    <a href="#" class="nav__logo">
-      <img src="assets/img/logo.svg" class="nav__logo-img" alt="The brand of Luxerious fashion">
+<div class="top">
+  <div class="top__inner container">
+    <a href="index.html" class="top__logo">
+      <img src="assets/img/logo.svg" class="top__logo-img" alt="The brand of Luxerious fashion">
     </a>
 
-    <div class="nav__search">
-      <svg class="nav__search-icon">
+    <div class="top__search">
+      <svg class="top__search-icon">
         <use xlink:href="assets/img/icons.svg#search"></use>
       </svg>
     </div>
 
-    <div class="nav__toggle">
-      <button type="button" class="nav__toggle-btn js-nav__toggle"></button>
+    <div class="top__toggle">
+      <button type="button" class="top__toggle-btn js-top__toggle"></button>
     </div>
 
-    <a href="#" class="nav__login">
-      <svg class="nav__login-icon">
+    <a href="#" class="top__login">
+      <svg class="top__login-icon">
         <use xlink:href="assets/img/icons.svg#user"></use>
       </svg>
     </a>
 
-    <a href="#" class="nav__basket" data-basket-amount="5">
-      <svg class="nav__basket-icon">
+    <a href="#" class="top__basket" data-basket-amount="5">
+      <svg class="top__basket-icon">
         <use xlink:href="assets/img/icons.svg#basket"></use>
       </svg>
     </a>
 
 
-    <div class="menu">
+    <nav class="menu">
       <div class="menu__title">MENU</div>
 
       <div class="menu__boxed">
@@ -124,9 +125,9 @@
           <use xlink:href="assets/img/icons.svg#close"></use>
         </svg>
       </button>
-    </div>
+    </nav>
   </div>
-</nav>
+</div>
 
 <header class="home__header">
   <div class="home__header-inner container">
@@ -172,9 +173,10 @@
     </div>
   </section>
 
-  <section class="product">
-    <h2 class="product__title">Featured Items</h2>
-    <p class="product__text">Shop for items based on what we product in this week</p>
+  <section class="home__products">
+    <h2 class="home__products-title">Featured Items</h2>
+
+    <p class="home__products-text">Shop for items based on what we product in this week</p>
 
     <div class="product__list">
       <div class="product__item">
