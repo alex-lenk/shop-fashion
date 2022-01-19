@@ -15,6 +15,7 @@
 @import "base/fonts";
 @import "base/button";
 @import "base/forms";
+@import "base/custom-control";
 
 /* components styles */
 @import "components/breadcrumb";
@@ -28,33 +29,21 @@
 @import "section/subscribe";
 @import "section/footer";
 @import "section/header__page";
-@import "section/catalog";
 
 /* Home section styles */
 @import "home/home__header";
 @import "home/home__products";
 @import "home/offers";
 
+/* Catalog section styles */
+@import "section/catalog";
+@import "catalog/filter";
+@import "catalog/sorting";
+
 .catalog__sorting {
+  margin-bottom: 64px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 30px;
-
 }
 
-.catalog__filter {
-}
-
-.catalog__filter-label {
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-}
-
-.catalog__filter-decor {
-  width: 15px;
-  height: 15px;
-  margin-left: 11px;
-}

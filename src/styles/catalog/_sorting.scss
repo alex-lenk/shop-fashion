@@ -1,0 +1,37 @@
+.sorting {
+  display: flex;
+}
+
+.sorting__box {
+  padding: 0 9px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:not(:last-of-type) {
+    margin-right: 19px
+  }
+}
+
+.sorting__box-heading {
+  font-size: 14px;
+  color: #6F6E6E;
+  cursor: pointer;
+}
+
+.sorting__box-decor {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+
+.sorting__dropdown {
+  padding: 7px 9px;
+  background-color: #fff;
+  box-shadow: 6px 4px 35px rgba(#000, .21);
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  left: 0;
+  min-width: -webkit-fill-available;
+}
