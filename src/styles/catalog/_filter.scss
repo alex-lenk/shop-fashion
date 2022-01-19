@@ -1,5 +1,4 @@
 .filter {
-  padding: 0 15px;
   position: relative;
   z-index: 1;
 }
@@ -15,14 +14,7 @@
   z-index: 2;
 }
 
-.filter__label-decor {
-  width: 15px;
-  height: 15px;
-  margin-left: 11px;
-}
-
 .filter__fly {
-  width: 100%;
   padding: 49px 15px 15px;
   background-color: #fff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -58,6 +50,7 @@
 .filter__menu {
   padding-top: 21px;
   padding-left: 16px;
+  font-size: 14px;
 }
 
 .filter__menu-item:not(:last-child) {
@@ -79,5 +72,49 @@
   + .filter__fly {
     opacity: 1;
     pointer-events: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .filter {
+    padding: 0 15px;
+  }
+  .filter__label-decor {
+    width: 15px;
+    height: 15px;
+    margin-left: 11px;
+  }
+  .filter__fly {
+    width: 100%;
+  }
+}
+
+@media (max-width: 699px) {
+  .filter {
+    padding-left: 8px;
+  }
+  .filter__label-text {
+    display: none
+  }
+  .filter__label-decor {
+    width: 38px;
+    height: 38px;
+  }
+  .filter__fly {
+    min-width: 200px;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 359px) {
+  .filter__label-decor {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  .filter {
+    width: 35%
   }
 }

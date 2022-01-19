@@ -1,15 +1,12 @@
 .header__page {
   margin-top: 75px;
-  margin-bottom: 51px;
   background-color: #F8F3F4;
 }
 
 .header__page-inner {
   min-height: 148px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .header__page-title {
@@ -20,4 +17,27 @@
   color: $pink;
   text-transform: uppercase;
   flex-grow: 1;
+}
+
+@media (min-width: 700px) {
+  .header__page {
+    margin-bottom: 51px;
+  }
+  .header__page-inner {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 699px) {
+  .header__page {
+    margin-bottom: 17px;
+  }
+  .header__page-inner {
+    text-align: center;
+  }
+  .header__page-title {
+    min-height: 50px;
+    margin-bottom: 10px;
+  }
 }

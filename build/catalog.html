@@ -151,9 +151,10 @@
 
 <main class="catalog container">
   <div class="catalog__sorting">
+    <!-- Begin: filter -->
     <div class="filter">
       <div class="filter__label js-filter__label">
-        FILTER
+        <span class="filter__label-text">FILTER</span>
         <svg class="filter__label-decor">
           <use xlink:href="assets/img/icons.svg#filter"></use>
         </svg>
@@ -281,7 +282,10 @@
         </div>
       </div>
     </div>
+    <!-- End: filter -->
 
+
+    <!-- Begin: sorting -->
     <div class="sorting">
       <div class="sorting__box">
         <div class="sorting__box-heading acc js-collapse">
@@ -385,9 +389,10 @@
         </ul>
       </div>
     </div>
+    <!-- End: sorting -->
   </div>
 
-  <div class="product__list">
+  <section class="product__list">
     <div class="product__item">
       <div class="product__media">
         <img src="assets/img/products/img-01.jpg" alt="">
@@ -612,7 +617,7 @@
         <div class="product__boxed-cost">$52.00</div>
       </div>
     </div>
-  </div>
+  </section>
 
   <nav class="catalog__pagination">
     <ul class="pagination">

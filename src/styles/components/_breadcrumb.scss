@@ -1,5 +1,4 @@
 .breadcrumb {
-  max-width: 50%;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -32,5 +31,17 @@
 
   &:hover {
     color: $pink;
+  }
+}
+
+@media (min-width: 700px) {
+  .breadcrumb {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 699px) {
+  .breadcrumb {
+    justify-content: center;
   }
 }

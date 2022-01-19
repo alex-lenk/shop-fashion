@@ -39,11 +39,3 @@
 @import "section/catalog";
 @import "catalog/filter";
 @import "catalog/sorting";
-
-.catalog__sorting {
-  margin-bottom: 64px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 30px;
-}
-
