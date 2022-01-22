@@ -38,7 +38,7 @@ const pathFiles = {
     watch: './src/styles/**/**/*.scss'
   },
   js: {
-    src: ['./src/js/**/!(_)*.js', '!./src/js/vendor/'],
+    src: ['!./src/js/vendor/', './src/js/*.js'],
     srcVendor: './src/js/vendor.js',
     build: './build/assets/js/',
     watch: './src/js/**/*.js',
@@ -114,7 +114,9 @@ const js = () => {
       },
       optimization: {
         minimize: true,
-        minimizer: [new TerserPlugin()],
+        minimizer: [new TerserPlugin({
+          extractComments: false
+        })],
       },
       plugins: []
     }), webpack)

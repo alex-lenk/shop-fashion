@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta content="telephone=no" name="format-detection">
 
-  <title>The brand of Luxerious fashion</title>
-  <meta name="description" content="“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“">
+  <title>Product Luxerious fashion</title>
+  <meta name="description" content="Description for catalog page">
 
   <link rel="stylesheet" href="assets/css/styles.min.css?ver=1.7">
 
@@ -131,59 +131,157 @@
   </div>
 </div>
 
-<header class="home__header">
-  <div class="home__header-inner container">
-    <h1 class="home__title">
-      <span class="home__title-brand">THE BRAND</span>
-      OF LUXERIOUS <span class="home__title-hit">FASHION</span>
-    </h1>
-  </div>
+  <header class="header__page">
+  <div class="header__page-inner container">
+    <h1 class="header__page-title">Product Page</h1>
+
+        <ol class="breadcrumb">
+      <li class="breadcrumb__item">
+        <a href="index.html" class="breadcrumb__link">HOME</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="catalog.html" class="breadcrumb__link">MEN</a>
+      </li>
+      <li class="breadcrumb__item breadcrumb__item__active" aria-current="page">
+        NEW ARRIVALS
+      </li>
+    </ol>
+      </div>
 </header>
 
-<main class="container">
-  <section class="offers">
-    <div class="offers__item">
-      <div class="offers__box">
-        <div class="offers__box-top">30% OFF</div>
-        <div class="offers__box-bottom">FOR WOMEN</div>
-      </div>
-      <img src="assets/img/offers/img-01.jpg" alt="">
+  <div class="detail__slider glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+          <picture>
+            <source srcset="assets/img/slider/img-2-mob.jpg" media="(max-width: 699px)">
+            <img src="assets/img/slider/img-2.jpg" alt="">
+          </picture>
+        </li>
+        <li class="glide__slide">
+          <picture>
+            <source srcset="assets/img/slider/img-2-mob.jpg" media="(max-width: 699px)">
+            <img src="assets/img/slider/img-2.jpg" alt="">
+          </picture>
+        </li>
+      </ul>
     </div>
 
-    <div class="offers__item">
-      <div class="offers__box">
-        <div class="offers__box-top">HOT DEAL</div>
-        <div class="offers__box-bottom">FOR MEN</div>
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="detail">
+      <div class="detail__category">WOMEN COLLECTION</div>
+
+      <h2 class="detail__title">MOSCHINO CHEAP AND CHIC</h2>
+
+      <p class="detail__text">
+        Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+      </p>
+
+      <div class="detail__cost">$561</div>
+
+      <hr class="detail__decor">
+
+      <!-- Begin: detail__select -->
+      <div class="detail__select">
+        <div class="detail__box sorting__box">
+          <div class="sorting__box-heading acc js-collapse">
+            CHOOSE COLOR
+            <svg class="sorting__box-decor">
+              <use xlink:href="assets/img/icons.svg#chevron"></use>
+            </svg>
+          </div>
+
+          <ul class="sorting__dropdown acc__content list__unstyled">
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">Red</span>
+              </label>
+            </li>
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">Black</span>
+              </label>
+            </li>
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">Pink</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="detail__box sorting__box">
+          <div class="sorting__box-heading acc js-collapse">
+            CHOOSE SIZE
+            <svg class="sorting__box-decor">
+              <use xlink:href="assets/img/icons.svg#chevron"></use>
+            </svg>
+          </div>
+
+          <ul class="sorting__dropdown acc__content list__unstyled">
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">XS</span>
+              </label>
+            </li>
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">S</span>
+              </label>
+            </li>
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">M</span>
+              </label>
+            </li>
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">L</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="detail__box sorting__box">
+          <div class="sorting__box-heading acc js-collapse">
+            QUANTITY
+            <svg class="sorting__box-decor">
+              <use xlink:href="assets/img/icons.svg#chevron"></use>
+            </svg>
+          </div>
+
+          <div class="sorting__dropdown acc__content">
+            <input type="number" class="form__field">
+          </div>
+        </div>
       </div>
-      <img src="assets/img/offers/img-02.jpg" alt="">
+      <!-- End: detail__select -->
+
+      <a href="#" class="btn__light btn">
+        <svg class="btn__light-icon">
+          <use xlink:href="assets/img/icons.svg#basket"></use>
+        </svg>
+        Add to Cart
+      </a>
     </div>
 
-    <div class="offers__item">
-      <div class="offers__box">
-        <div class="offers__box-top">NEW ARRIVALS</div>
-        <div class="offers__box-bottom">FOR KIDS</div>
-      </div>
-      <img src="assets/img/offers/img-03.jpg" alt="">
-    </div>
-
-    <div class="offers__item">
-      <div class="offers__box">
-        <div class="offers__box-top">LUXIROUS & TRENDY</div>
-        <div class="offers__box-bottom">ACCESSORIES</div>
-      </div>
-      <img src="assets/img/offers/img-04.jpg" alt="">
-    </div>
-  </section>
-
-  <section class="home__products">
-    <h2 class="home__products-title">Featured Items</h2>
-
-    <p class="home__products-text">Shop for items based on what we product in this week</p>
-
-    <div class="product__list">
+    <div class="detail__similar product__list">
       <div class="product__item">
         <div class="product__media">
-          <img src="assets/img/products/img-01.jpg" alt="">
+          <img src="assets/img/products/img-04.jpg" alt="">
 
           <div class="product__add">
             <button type="button" class="btn btn__cart">
@@ -195,40 +293,15 @@
           </div>
         </div>
 
-       <div class="product__boxed">
-         <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
+        <div class="product__boxed">
+          <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
 
-         <p class="product__boxed-text">
-           Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-         </p>
+          <p class="product__boxed-text">
+            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+          </p>
 
-         <div class="product__boxed-cost">$52.00</div>
-       </div>
-      </div>
-
-      <div class="product__item">
-        <div class="product__media">
-          <img src="assets/img/products/img-02.jpg" alt="">
-
-          <div class="product__add">
-            <button type="button" class="btn btn__cart">
-              <svg class="btn__cart-icon">
-                <use xlink:href="assets/img/icons.svg#basket"></use>
-              </svg>
-              Add to Cart
-            </button>
-          </div>
+          <div class="product__boxed-cost">$52.00</div>
         </div>
-
-       <div class="product__boxed">
-         <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
-
-         <p class="product__boxed-text">
-           Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-         </p>
-
-         <div class="product__boxed-cost">$52.00</div>
-       </div>
       </div>
 
       <div class="product__item">
@@ -245,65 +318,15 @@
           </div>
         </div>
 
-       <div class="product__boxed">
-         <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
+        <div class="product__boxed">
+          <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
 
-         <p class="product__boxed-text">
-           Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-         </p>
+          <p class="product__boxed-text">
+            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+          </p>
 
-         <div class="product__boxed-cost">$52.00</div>
-       </div>
-      </div>
-
-      <div class="product__item">
-        <div class="product__media">
-          <img src="assets/img/products/img-04.jpg" alt="">
-
-          <div class="product__add">
-            <button type="button" class="btn btn__cart">
-              <svg class="btn__cart-icon">
-                <use xlink:href="assets/img/icons.svg#basket"></use>
-              </svg>
-              Add to Cart
-            </button>
-          </div>
+          <div class="product__boxed-cost">$52.00</div>
         </div>
-
-       <div class="product__boxed">
-         <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
-
-         <p class="product__boxed-text">
-           Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-         </p>
-
-         <div class="product__boxed-cost">$52.00</div>
-       </div>
-      </div>
-
-      <div class="product__item">
-        <div class="product__media">
-          <img src="assets/img/products/img-05.jpg" alt="">
-
-          <div class="product__add">
-            <button type="button" class="btn btn__cart">
-              <svg class="btn__cart-icon">
-                <use xlink:href="assets/img/icons.svg#basket"></use>
-              </svg>
-              Add to Cart
-            </button>
-          </div>
-        </div>
-
-       <div class="product__boxed">
-         <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
-
-         <p class="product__boxed-text">
-           Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-         </p>
-
-         <div class="product__boxed-cost">$52.00</div>
-       </div>
       </div>
 
       <div class="product__item">
@@ -320,63 +343,20 @@
           </div>
         </div>
 
-       <div class="product__boxed">
-         <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
+        <div class="product__boxed">
+          <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
 
-         <p class="product__boxed-text">
-           Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-         </p>
+          <p class="product__boxed-text">
+            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+          </p>
 
-         <div class="product__boxed-cost">$52.00</div>
-       </div>
+          <div class="product__boxed-cost">$52.00</div>
+        </div>
       </div>
     </div>
 
-    <div class="product__more">
-      <a href="#" class="btn__light btn">Browse All Product</a>
-    </div>
-  </section>
-</main>
+  </main>
 
-<section class="featured">
-  <div class="featured__inner container">
-    <div class="featured__box">
-      <svg class="featured__icon">
-        <use xlink:href="assets/img/icons.svg#delivery"></use>
-      </svg>
-
-      <h3 class="featured__title">Free Delivery</h3>
-
-      <div class="featured__text">
-        Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.
-      </div>
-    </div>
-
-    <div class="featured__box">
-      <svg class="featured__icon">
-        <use xlink:href="assets/img/icons.svg#sale"></use>
-      </svg>
-
-      <h3 class="featured__title">Sales & discounts</h3>
-
-      <div class="featured__text">
-        Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.
-      </div>
-    </div>
-
-    <div class="featured__box">
-      <svg class="featured__icon">
-        <use xlink:href="assets/img/icons.svg#quality"></use>
-      </svg>
-
-      <h3 class="featured__title">Quality assurance</h3>
-
-      <div class="featured__text">
-        Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="subscribe">
   <div class="subscribe__inner container">

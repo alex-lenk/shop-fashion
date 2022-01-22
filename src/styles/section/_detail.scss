@@ -1,0 +1,128 @@
+.detail {
+  padding: 66px 12px;
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+  background-color: #fff;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.detail__category {
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $pink;
+
+  &::after {
+    width: 63px;
+    height: 3px;
+    display: block;
+    margin: 10px auto 0;
+    background-color: $pink;
+    content: '';
+  }
+}
+
+.detail__title {
+  margin-bottom: 48px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+}
+
+.detail__text {
+  max-width: 557px;
+  margin: 0 auto 33px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+}
+
+.detail__cost {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+
+.detail__decor {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #EAEAEA;
+  opacity: 1;
+}
+
+.detail__select {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.detail__similar {
+  margin-bottom: 128px;
+}
+
+@media (min-width: 700px) {
+  .detail__slider {
+    margin-top: -51px;
+  }
+
+  .detail {
+    margin-bottom: 128px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-left: 1px solid #EAEAEA;
+    border-right: 1px solid #EAEAEA;
+  }
+  .detail__decor {
+    max-width: 642px;
+    margin-top: 62px;
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: 992px) {
+  .detail {
+    margin-top: -45px;
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 699px) {
+  .detail__slider {
+    padding-top: 65px;
+  }
+  .detail {
+    margin-bottom: 64px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .detail__box {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .detail__decor {
+    max-width: 175px;
+    margin-top: 31px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 359px) {
+  .detail__box {
+    padding-left: 0;
+    padding-right: 0;
+
+    .sorting__box-heading {
+      font-size: 11px;
+    }
+  }
+}

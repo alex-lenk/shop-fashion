@@ -1,0 +1,218 @@
+{% extends './templates/_layout.twig' %}
+{% set title = "Product Luxerious fashion" %}
+{% set titlePage = "Product Page" %}
+{% set description = "Description for catalog page" %}
+{% set breadcrumb = "true" %}
+{% set featured = "false" %}
+
+{% block content %}
+  {% include './templates/_header__page.twig' %}
+
+  <div class="detail__slider glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+          <picture>
+            <source srcset="assets/img/slider/img-2-mob.jpg" media="(max-width: 699px)">
+            <img src="assets/img/slider/img-2.jpg" alt="">
+          </picture>
+        </li>
+        <li class="glide__slide">
+          <picture>
+            <source srcset="assets/img/slider/img-2-mob.jpg" media="(max-width: 699px)">
+            <img src="assets/img/slider/img-2.jpg" alt="">
+          </picture>
+        </li>
+      </ul>
+    </div>
+
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="detail">
+      <div class="detail__category">WOMEN COLLECTION</div>
+
+      <h2 class="detail__title">MOSCHINO CHEAP AND CHIC</h2>
+
+      <p class="detail__text">
+        Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+      </p>
+
+      <div class="detail__cost">$561</div>
+
+      <hr class="detail__decor">
+
+      <!-- Begin: detail__select -->
+      <div class="detail__select">
+        <div class="detail__box sorting__box">
+          <div class="sorting__box-heading acc js-collapse">
+            CHOOSE COLOR
+            <svg class="sorting__box-decor">
+              <use xlink:href="assets/img/icons.svg#chevron"></use>
+            </svg>
+          </div>
+
+          <ul class="sorting__dropdown acc__content list__unstyled">
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">Red</span>
+              </label>
+            </li>
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">Black</span>
+              </label>
+            </li>
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">Pink</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="detail__box sorting__box">
+          <div class="sorting__box-heading acc js-collapse">
+            CHOOSE SIZE
+            <svg class="sorting__box-decor">
+              <use xlink:href="assets/img/icons.svg#chevron"></use>
+            </svg>
+          </div>
+
+          <ul class="sorting__dropdown acc__content list__unstyled">
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">XS</span>
+              </label>
+            </li>
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">S</span>
+              </label>
+            </li>
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">M</span>
+              </label>
+            </li>
+            <li>
+              <label class="custom__control">
+                <input type="checkbox" class="custom__control-input">
+                <span class="custom__checkbox custom__control-label">L</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="detail__box sorting__box">
+          <div class="sorting__box-heading acc js-collapse">
+            QUANTITY
+            <svg class="sorting__box-decor">
+              <use xlink:href="assets/img/icons.svg#chevron"></use>
+            </svg>
+          </div>
+
+          <div class="sorting__dropdown acc__content">
+            <input type="number" class="form__field">
+          </div>
+        </div>
+      </div>
+      <!-- End: detail__select -->
+
+      <a href="#" class="btn__light btn">
+        <svg class="btn__light-icon">
+          <use xlink:href="assets/img/icons.svg#basket"></use>
+        </svg>
+        Add to Cart
+      </a>
+    </div>
+
+    <div class="detail__similar product__list">
+      <div class="product__item">
+        <div class="product__media">
+          <img src="assets/img/products/img-04.jpg" alt="">
+
+          <div class="product__add">
+            <button type="button" class="btn btn__cart">
+              <svg class="btn__cart-icon">
+                <use xlink:href="assets/img/icons.svg#basket"></use>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product__boxed">
+          <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
+
+          <p class="product__boxed-text">
+            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+          </p>
+
+          <div class="product__boxed-cost">$52.00</div>
+        </div>
+      </div>
+
+      <div class="product__item">
+        <div class="product__media">
+          <img src="assets/img/products/img-03.jpg" alt="">
+
+          <div class="product__add">
+            <button type="button" class="btn btn__cart">
+              <svg class="btn__cart-icon">
+                <use xlink:href="assets/img/icons.svg#basket"></use>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product__boxed">
+          <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
+
+          <p class="product__boxed-text">
+            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+          </p>
+
+          <div class="product__boxed-cost">$52.00</div>
+        </div>
+      </div>
+
+      <div class="product__item">
+        <div class="product__media">
+          <img src="assets/img/products/img-06.jpg" alt="">
+
+          <div class="product__add">
+            <button type="button" class="btn btn__cart">
+              <svg class="btn__cart-icon">
+                <use xlink:href="assets/img/icons.svg#basket"></use>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product__boxed">
+          <h3 class="product__boxed-title">ELLERY X M'O CAPSULE</h3>
+
+          <p class="product__boxed-text">
+            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+          </p>
+
+          <div class="product__boxed-cost">$52.00</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+{% endblock %}
