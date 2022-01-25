@@ -168,7 +168,7 @@ const myServer = () => {
 }
 
 const svgSprite = () => {
-  return src('./src/img/icons/*.svg')
+  return src('./src/img/sprite/*.svg')
     .pipe(svgMin(function getOptions() {
       return {
         plugins: [
@@ -178,7 +178,7 @@ const svgSprite = () => {
           {
             name: 'cleanupIDs',
             parmas: {
-              prefix: 'icons',
+              prefix: 'sprite',
               minify: true
             }
           }

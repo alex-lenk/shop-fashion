@@ -2226,6 +2226,8 @@ img {
 @media (min-width: 700px) {
   .detail__slider {
     margin-top: -51px;
+    background-color: #f7f7f7;
+    text-align: center;
   }
 
   .detail {
