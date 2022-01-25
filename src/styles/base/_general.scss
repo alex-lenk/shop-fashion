@@ -1,3 +1,27 @@
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Begin: styles for accordion script */
+
+.acc:not(.acc__active) + .acc__content {
+  display: none;
+}
+
+/* End */
+
+
+/* Begin: стили на повторящющейся классы */
+
 .list__unstyled {
   padding-left: 0;
   margin-bottom: 0;
@@ -15,19 +39,6 @@
   border: 0;
 }
 
-.container {
-  width: 100%;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.tab__panel:not(.tab__panel-show) {
-  display: none;
-}
-
 .d-none {
   display: none !important;
 }
@@ -40,18 +51,4 @@
   white-space: nowrap;
 }
 
-img {
-  max-width: 100%;
-}
-
-h2 {
-  color: $blackColor;
-}
-
-h3 {
-  color: $blackColor;
-}
-
-h4 {
-  color: $blackColor;
-}
+/* End */

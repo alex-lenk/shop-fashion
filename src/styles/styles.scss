@@ -1,3 +1,4 @@
+/* Переменные цветов и перебивка настроек и Bootstrap */
 @import 'base/settings';
 
 /* BEGIN Bootstrap Reboot v5.1.3 (https://getbootstrap.com/) */
@@ -14,16 +15,27 @@
 @import "base/fonts";
 @import "base/button";
 @import "base/forms";
+@import "base/custom-control";
 
-/* General section */
+/* components styles */
+@import "components/breadcrumb";
+@import "components/pagination";
+
+/* General section styles */
 @import "section/top";
 @import "section/menu";
 @import "section/product";
 @import "section/featured";
 @import "section/subscribe";
 @import "section/footer";
+@import "section/header__page";
 
-/* Home section */
+/* Home section styles */
 @import "home/home__header";
 @import "home/home__products";
 @import "home/offers";
+
+/* Catalog section styles */
+@import "section/catalog";
+@import "catalog/filter";
+@import "catalog/sorting";

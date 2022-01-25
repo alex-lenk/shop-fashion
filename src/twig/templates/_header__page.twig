@@ -1,0 +1,19 @@
+<header class="header__page">
+  <div class="header__page-inner container">
+    <h1 class="header__page-title">{{ titlePage }}</h1>
+
+    {% if breadcrumb == "true" %}
+    <ol class="breadcrumb">
+      <li class="breadcrumb__item">
+        <a href="index.html" class="breadcrumb__link">HOME</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="#" class="breadcrumb__link">MEN</a>
+      </li>
+      <li class="breadcrumb__item breadcrumb__item__active" aria-current="page">
+        NEW ARRIVALS
+      </li>
+    </ol>
+    {% endif %}
+  </div>
+</header>

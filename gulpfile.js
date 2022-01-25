@@ -3,23 +3,28 @@ import gulp from 'gulp'
 
 const {series, watch, src, dest, lastRun} = gulp
 
+// Define "require"
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
 import twig from 'gulp-twig'
-import sass from 'gulp-sass'
-import autoprefixer from 'gulp-autoprefixer'
-import cleanCSS from 'gulp-clean-css'
-import webpack from 'webpack'
-import webpackStream from 'webpack-stream'
 import browserSync from 'browser-sync'
-import svgMin from 'gulp-svgmin'
-import svgStore from 'gulp-svgstore'
-import basePath from 'path'
-import newer from 'gulp-newer'
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
+import autoprefixer from 'gulp-autoprefixer'
 import rename from 'gulp-rename'
-import debug from 'gulp-debug'
+import cleanCSS from 'gulp-clean-css'
+const uglifyEs = require('gulp-uglify-es').default
 import imagemin from 'gulp-imagemin'
+import newer from 'gulp-newer'
 import imageminOptiPng from 'imagemin-optipng'
 import imageminMozJpeg from 'imagemin-mozjpeg'
-import uglify from 'gulp-uglify'
+import svgMin from 'gulp-svgmin'
+import svgStore from 'gulp-svgstore'
+import webpack from 'webpack'
+import webpackStream from 'webpack-stream'
+import TerserPlugin from 'terser-webpack-plugin'
 
 const pathFiles = {
   html: {
@@ -36,7 +41,8 @@ const pathFiles = {
     src: ['./src/js/**/!(_)*.js', '!./src/js/vendor/'],
     srcVendor: './src/js/vendor.js',
     build: './build/assets/js/',
-    watch: './src/js/**/*.js'
+    watch: './src/js/**/*.js',
+    entry: './src/js/scripts.js'
   },
   img: {
     src: './src/img/**/*.+(png|jpg|jpeg|svg)',
@@ -55,18 +61,18 @@ const pathFiles = {
   }
 }
 
-const HTML = () => {
+const html = () => {
   return src(pathFiles.html.src)
     .pipe(twig())
     .pipe(dest(pathFiles.html.build))
     .pipe(browserSync.stream())
 }
 
-const SCSS = () => {
+const scss = () => {
   return src(pathFiles.css.src)
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest(pathFiles.css.build))
     .pipe(autoprefixer())
+    .pipe(dest(pathFiles.css.build))
     .pipe(rename({
       suffix: ".min"
     }))
@@ -82,19 +88,43 @@ const SCSS = () => {
 }
 
 const js = () => {
-  return src(pathFiles.js.src, {since: lastRun(HTML)})
+  return src(pathFiles.js.src)
     .pipe(dest(pathFiles.js.build))
-    .pipe(uglify())
-    .pipe(rename({
-      suffix: ".min"
-    }))
+    .pipe(webpackStream({
+      mode: "production",
+      entry: {
+        'scripts.min': pathFiles.js.entry
+      },
+      performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+      },
+      output: {
+        filename: "[name].js"
+      },
+      module: {
+        rules: [{
+          test: /\.js$/,
+          exclude: /^_(\w+)(\.js)$|node_modules/,
+          use: {
+            loader: 'babel-loader'
+          }
+        }]
+      },
+      optimization: {
+        minimize: true,
+        minimizer: [new TerserPlugin()],
+      },
+      plugins: []
+    }), webpack)
     .pipe(dest(pathFiles.js.build))
     .pipe(browserSync.stream())
 }
 
 const images = () => {
   return src(pathFiles.img.src)
-    .pipe(newer(pathFiles.img.build))
+    .pipe(newer(pathFiles.img.src))
     .pipe(imagemin([
       imageminOptiPng({
         optimizationLevel: 5
@@ -105,27 +135,18 @@ const images = () => {
       })
     ]))
     .pipe(dest(pathFiles.img.build))
-    .pipe(debug({
-      "title": "Images:"
-    }))
     .on("end", browserSync.reload);
 }
 
 const fonts = () => {
   return src(pathFiles.fonts.src)
     .pipe(dest(pathFiles.fonts.build))
-    .pipe(debug({
-      "title": "Fonts:"
-    }))
     .pipe(browserSync.stream())
 }
 
 const favicon = () => {
   return src(pathFiles.favicon.src)
     .pipe(dest(pathFiles.favicon.build))
-    .pipe(debug({
-      "title": "Favicon:"
-    }))
     .pipe(browserSync.stream())
 }
 
@@ -134,23 +155,19 @@ const myServer = () => {
     server: {
       baseDir: pathFiles.html.build
     },
-    port: 4004,
+    port: 4505,
     notify: false,
     tunnel: true
   })
-  watch(pathFiles.html.watch, {usePolling: true}, HTML);
-  watch(pathFiles.css.watch, SCSS);
+  watch(pathFiles.html.watch, {usePolling: true}, html);
+  watch(pathFiles.css.watch, scss);
   watch(pathFiles.js.watch, js);
   //watch(pathFiles.js.watch, jsVendor);
 }
 
 const svgSprite = () => {
   return src('./src/img/icons/*.svg')
-    .pipe(svgMin(function getOptions(file) {
-      let prefix = basePath.basename(
-        file.relative,
-        basePath.extname(file.relative)
-      );
+    .pipe(svgMin(function getOptions() {
       return {
         plugins: [
           'removeDoctype',
@@ -159,7 +176,7 @@ const svgSprite = () => {
           {
             name: 'cleanupIDs',
             parmas: {
-              prefix: prefix + '-',
+              prefix: 'icons',
               minify: true
             }
           }
@@ -170,16 +187,15 @@ const svgSprite = () => {
     .pipe(dest(pathFiles.img.build));
 }
 
-const defaultGulp = series(HTML, SCSS, js, images, fonts, favicon, myServer);
-
-export {HTML}
-export {SCSS}
 export {js}
+export {html}
+export {scss}
 export {images}
 export {fonts}
 export {favicon}
 export {myServer}
 export {svgSprite}
-//export { jsVendor }
+
+const defaultGulp = series(html, scss, js, images, fonts, favicon, myServer);
 
 export {defaultGulp}
