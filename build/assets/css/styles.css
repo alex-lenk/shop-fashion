@@ -1386,6 +1386,10 @@ img {
   font-weight: 400;
 }
 
+.product__boxed-link {
+  color: inherit;
+}
+
 .product__boxed-text {
   margin-bottom: 16px;
   font-weight: 300;
@@ -2273,4 +2277,7 @@ img {
   .detail__box .sorting__box-heading {
     font-size: 11px;
   }
+}
+.cart__products {
+  margin-bottom: 72px;
 }
