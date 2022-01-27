@@ -89,3 +89,43 @@
   fill: #EF5B70;
   transition: fill .3s ease-in-out;
 }
+
+.btn__grey {
+  height: 35px;
+  padding: 1px 15px;
+  border: 1px solid #4A4A4A;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.btn__primary {
+  height: 50px;
+  padding: 15px 39px;
+  border: 1px solid;
+  background-color: $pink;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
+
+  &:hover {
+    background-color: $pink;
+    border-color: $pink;
+    color: #fff;
+
+    .btn__light-icon {
+      fill: #fff;
+    }
+  }
+
+  &:active {
+    background-color: #fff;
+    color: $pink;
+    border-color: $pink;
+  }
+}

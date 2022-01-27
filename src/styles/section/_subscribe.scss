@@ -30,8 +30,15 @@
 .subscribe__form-input {
   padding: 8px 23px;
   height: 49px;
+  border: 0;
+  font-size: 14px;
+  background-color: #E1E1E1;
   border-radius: 32px 0 0 32px;
   flex-grow: 1;
+
+  &:focus {
+    border: 0;
+  }
 }
 
 .subscribe__form-submit {

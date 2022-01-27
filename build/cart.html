@@ -9,7 +9,7 @@
   <title>SHOPPING CART</title>
   <meta name="description" content="Description for SHOPPING CART page">
 
-  <link rel="stylesheet" href="assets/css/styles.min.css?ver=1.8">
+  <link rel="stylesheet" href="assets/css/styles.min.css?ver=1.9">
 
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -142,10 +142,115 @@
     <div class="cart__content">
       <section class="cart__products">
         <div class="cart__products-item">
+          <div class="cart__products-media">
+            <img src="assets/img/products/cart-1.jpg" alt="">
+          </div>
 
+          <div class="cart__products-content">
+            <h4 class="cart__products-title">MANGO  PEOPLE  T-SHIRT</h4>
+
+            <div class="cart__option">
+              <span class="cart__option-label">Price:</span>
+              <span class="cart__option-cost">$300</span>
+            </div>
+            <div class="cart__option">
+              <span class="cart__option-label">Color:</span>
+              <span class="cart__option-value">Red</span>
+            </div>
+            <div class="cart__option">
+              <span class="cart__option-label">Size:</span>
+              <span class="cart__option-value">Xl</span>
+            </div>
+            <div class="cart__option">
+              <span class="cart__option-label">Quantity:</span>
+              <input type="number" class="cart__input form__field" value="2">
+            </div>
+          </div>
+
+          <button class="cart__close">
+            <svg class="cart__close-icon">
+              <use xlink:href="assets/img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="cart__products-item">
+          <div class="cart__products-media">
+            <img src="assets/img/products/cart-2.jpg" alt="">
+          </div>
+
+          <div class="cart__products-content">
+            <h4 class="cart__products-title">MANGO  PEOPLE  T-SHIRT</h4>
+
+            <div class="cart__option">
+              <span class="cart__option-label">Price:</span>
+              <span class="cart__option-cost">$300</span>
+            </div>
+            <div class="cart__option">
+              <span class="cart__option-label">Color:</span>
+              <span class="cart__option-value">Red</span>
+            </div>
+            <div class="cart__option">
+              <span class="cart__option-label">Size:</span>
+              <span class="cart__option-value">Xl</span>
+            </div>
+            <div class="cart__option">
+              <span class="cart__option-label">Quantity:</span>
+              <input type="number" class="cart__input form__field" value="2">
+            </div>
+          </div>
+
+          <button class="cart__close">
+            <svg class="cart__close-icon">
+              <use xlink:href="assets/img/sprite.svg#close"></use>
+            </svg>
+          </button>
         </div>
       </section>
+
+      <div class="cart__bottom">
+        <a href="#" class="cart__bottom-btn">Clear shopping cart</a>
+
+        <a href="#" class="cart__bottom-btn">Continue shopping</a>
+      </div>
     </div>
+
+    <aside class="cart__aside">
+      <form action="#">
+        <h3 class="cart__aside-title">SHIPPING ADDRESS</h3>
+
+        <div class="form__group">
+          <label for="country" class="sr-only">Country</label>
+          <input type="text" class="form__field form__placeholder" id="country" placeholder="Country">
+        </div>
+
+        <div class="form__group">
+          <label for="state" class="sr-only">State</label>
+          <input type="text" class="form__field form__placeholder" id="state" placeholder="State">
+        </div>
+
+        <div class="form__group">
+          <label for="zip" class="sr-only">Postcode / Zip</label>
+          <input type="text" class="form__field form__placeholder" id="zip" placeholder="Postcode / Zip">
+        </div>
+
+        <button class="btn__grey btn">GET A QUOTE</button>
+      </form>
+
+      <div class="cart__total">
+        <div class="cart__total-sub">
+          <div class="cart__total-label">SUB TOTAL</div>
+          $900
+        </div>
+
+        <div class="cart__total-grand">
+          GRAND TOTAL
+          <div class="cart__total-cost">$900</div>
+        </div>
+
+        <button class="btn__primary btn">PROCEED TO CHECKOUT</button>
+      </div>
+    </aside>
   </main>
 
 
@@ -208,11 +313,11 @@
       </li>
     </ul>
 
-    <div>&copy; 2021 Brand All Rights Reserved.</div>
+    <div>&copy; 2022 Brand All Rights Reserved.</div>
   </div>
 </footer>
 
 
-<script src="assets/js/scripts.min.js?ver=1.1"></script>
+<script src="assets/js/scripts.min.js?ver=1.2"></script>
 </body>
 </html>

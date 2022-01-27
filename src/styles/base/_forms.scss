@@ -1,15 +1,14 @@
 .form__field {
-  background: #E1E1E1;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   color: $blackColor;
-  border: 0;
-  height: 40px;
-  border-radius: 32px;
+  background: #fff;
+  border: 1px solid #A4A4A4;
+  height: 45px;
+  border-radius: 0;
   display: block;
   width: 100%;
-  padding: .375rem 24px;
-  line-height: 1.5;
+  padding: .375rem 17px;
   background-clip: padding-box;
   transition: border-color .3s ease-in-out;
 
@@ -20,6 +19,7 @@
   }
 
   &:focus {
+    border-color: $pink;
     background-color: #fff;
   }
 }
@@ -37,4 +37,8 @@
       transition: opacity .3s ease-in-out;
     }
   }
+}
+
+.form__group {
+  margin-bottom: 20px;
 }
