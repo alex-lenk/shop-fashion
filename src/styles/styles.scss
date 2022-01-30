@@ -9,6 +9,11 @@
 @import "vendor/bootstrap-5.1.3/reboot";
 /* END */
 
+/* BEGIN Glide slider */
+@import "vendor/glide/glide.core";
+@import "vendor/glide/glide.theme";
+/* END */
+
 /* base styles */
 @import "base/mixins";
 @import "base/general";
@@ -39,3 +44,18 @@
 @import "section/catalog";
 @import "catalog/filter";
 @import "catalog/sorting";
+
+/* Pages styles */
+@import "section/detail";
+
+
+.cart {
+}
+
+.cart__content {}
+
+.cart__products {
+  margin-bottom: 72px;
+}
+
+

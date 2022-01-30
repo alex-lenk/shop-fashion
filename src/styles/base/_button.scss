@@ -69,6 +69,10 @@
     background-color: $pink;
     border-color: $pink;
     color: #fff;
+
+    .btn__light-icon {
+      fill: #fff;
+    }
   }
 
   &:active {
@@ -76,4 +80,12 @@
     color: $pink;
     border-color: $pink;
   }
+}
+
+.btn__light-icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 22px;
+  fill: #EF5B70;
+  transition: fill .3s ease-in-out;
 }

@@ -19,7 +19,21 @@ document.querySelector('.js-menu__close').addEventListener('click', () => toggle
 
 
 /* BEGIN: Открытие и закрытие фильтра в каталоге */
-document.querySelector('.js-filter__label').addEventListener('click', function () {
-  this.classList.toggle('filter__open')
-})
+let jsFilterLabel = document.querySelector('.js-filter__label')
+if (jsFilterLabel) {
+  jsFilterLabel.addEventListener('click', function () {
+    this.classList.toggle('filter__open')
+  })
+}
+/* END */
+
+
+/* BEGIN: Импорт и инициализация плагина слайдера */
+import Glide from '@glidejs/glide'
+
+let glideEl = document.querySelector('.glide')
+
+if (glideEl) {
+  new Glide('.glide').mount()
+}
 /* END */
