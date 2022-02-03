@@ -4,7 +4,6 @@
 }
 
 .header__page-inner {
-  min-height: 148px;
   padding-top: 26px;
   padding-bottom: 26px;
 }
@@ -26,6 +25,9 @@
   .header__page-inner {
     display: flex;
     align-items: center;
+  }
+  .header__page-inner {
+    min-height: 148px;
   }
 }
 
