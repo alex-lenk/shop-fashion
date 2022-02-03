@@ -8,7 +8,7 @@ _accordionCollapse('js-collapse', 'acc__active');
 
 /* BEGIN: Открытие и закрытие панели меню */
 function toggle() {
-  document.querySelector('body').classList.toggle('menu__open')
+  document.querySelector('body').classList.toggle('b-menu__open')
 }
 
 document.querySelector('.js-top__toggle').addEventListener('click', () => toggle())
@@ -22,7 +22,7 @@ document.querySelector('.js-menu__close').addEventListener('click', () => toggle
 let jsFilterLabel = document.querySelector('.js-filter__label')
 if (jsFilterLabel) {
   jsFilterLabel.addEventListener('click', function () {
-    this.classList.toggle('filter__open')
+    this.classList.toggle('b-filter__open')
   })
 }
 /* END */

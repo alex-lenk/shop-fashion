@@ -23,8 +23,8 @@
 @import "base/custom-control";
 
 /* components styles */
-@import "components/breadcrumb";
-@import "components/pagination";
+@import "section/breadcrumb";
+@import "section/pagination";
 
 /* General section styles */
 @import "section/top";
@@ -36,14 +36,14 @@
 @import "section/header__page";
 
 /* Home section styles */
-@import "home/home__header";
-@import "home/home__products";
-@import "home/offers";
+@import "section/home__header";
+@import "section/home__products";
+@import "section/offers";
 
 /* Catalog section styles */
 @import "section/catalog";
-@import "catalog/filter";
-@import "catalog/sorting";
+@import "section/filter";
+@import "section/sorting";
 
 /* Pages styles */
 @import "section/detail";

@@ -1,4 +1,4 @@
-.btn {
+.b-btn {
   text-decoration: none;
   border-radius: 0;
   display: inline-flex;
@@ -22,7 +22,7 @@
   }
 }
 
-.btn__cart {
+.b-btn__cart {
   height: 44px;
   padding: 6px 16px;
   border: 1px solid;
@@ -33,7 +33,7 @@
   &:hover {
     color: $pink;
 
-    .btn__cart-icon {
+    .b-btn__cart-icon {
       fill: $pink;
     }
   }
@@ -43,13 +43,13 @@
     background-color: $pink;
     border-color: $pink;
 
-    .btn__cart-icon {
+    .b-btn__cart-icon {
       fill: #fff;
     }
   }
 }
 
-.btn__cart-icon {
+.b-btn__cart-icon {
   width: 26px;
   height: 24px;
   margin-left: -3px;
@@ -58,7 +58,7 @@
   transition: fill .3s ease-in-out;
 }
 
-.btn__light {
+.b-btn__light {
   height: 48px;
   padding: 15px 39px;
   border: 1px solid;
@@ -70,7 +70,7 @@
     border-color: $pink;
     color: #fff;
 
-    .btn__light-icon {
+    .b-btn__light-icon {
       fill: #fff;
     }
   }
@@ -82,7 +82,7 @@
   }
 }
 
-.btn__light-icon {
+.b-btn__light-icon {
   width: 26px;
   height: 26px;
   margin-right: 22px;
@@ -90,7 +90,7 @@
   transition: fill .3s ease-in-out;
 }
 
-.btn__grey {
+.b-btn__grey {
   height: 35px;
   padding: 1px 15px;
   border: 1px solid #4A4A4A;
@@ -102,7 +102,7 @@
   transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
-.btn__primary {
+.b-btn__primary {
   height: 50px;
   padding: 15px 39px;
   border: 1px solid;
@@ -118,7 +118,7 @@
     border-color: $pink;
     color: #fff;
 
-    .btn__light-icon {
+    .b-btn__light-icon {
       fill: #fff;
     }
   }

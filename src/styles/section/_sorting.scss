@@ -1,24 +1,24 @@
-.sorting {
+.b-sorting {
   display: flex;
 }
 
-.sorting__box {
+.b-sorting__box {
   padding: 0 9px;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.sorting__box-heading {
+.b-sorting__box-heading {
   color: #6F6E6E;
 }
 
-.sorting__box-decor {
+.b-sorting__box-decor {
   width: 10px;
   height: 10px;
 }
 
-.sorting__dropdown {
+.b-sorting__dropdown {
   padding: 7px 9px;
   background-color: #fff;
   box-shadow: 6px 4px 35px rgba(#000, .21);
@@ -28,52 +28,52 @@
 }
 
 @media (min-width: 700px) {
-  .sorting__dropdown {
+  .b-sorting__dropdown {
     top: 23px;
     font-size: 14px;
   }
-  .sorting__box:not(:last-of-type) {
+  .b-sorting__box:not(:last-of-type) {
     margin-right: 19px
   }
-  .sorting__box-heading {
+  .b-sorting__box-heading {
     font-size: 14px;
     cursor: pointer;
   }
-  .sorting__box-decor {
+  .b-sorting__box-decor {
     margin-left: 10px;
   }
 }
 
 @media (min-width: 992px) {
-  .sorting__dropdown {
+  .b-sorting__dropdown {
     left: 0;
   }
 }
 
 @media (max-width: 991px) {
-  .sorting__dropdown {
+  .b-sorting__dropdown {
     right: 0;
   }
 }
 
 @media (max-width: 699px) {
-  .sorting__dropdown {
+  .b-sorting__dropdown {
     top: 35px;
     font-size: 12px;
   }
-  .sorting__box:not(:last-of-type) {
+  .b-sorting__box:not(:last-of-type) {
     margin-right: 7px;
   }
-  .sorting__box-heading {
+  .b-sorting__box-heading {
     font-size: 12px;
   }
-  .sorting__box-decor {
+  .b-sorting__box-decor {
     margin-left: 6px;
   }
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  .sorting__box:last-of-type {
+  .b-sorting__box:last-of-type {
     min-width: 125px;
   }
 }

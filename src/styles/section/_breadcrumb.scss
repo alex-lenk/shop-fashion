@@ -1,4 +1,4 @@
-.breadcrumb {
+.b-breadcrumb {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.breadcrumb__item {
+.b-breadcrumb__item {
   font-weight: 700;
   font-size: 14px;
   color: $pink;
@@ -24,7 +24,7 @@
   }
 }
 
-.breadcrumb__link {
+.b-breadcrumb__link {
   font-weight: 300;
   color: #636363;
   transition: color .3s ease-in-out;
@@ -35,13 +35,13 @@
 }
 
 @media (min-width: 700px) {
-  .breadcrumb {
+  .b-breadcrumb {
     max-width: 50%;
   }
 }
 
 @media (max-width: 699px) {
-  .breadcrumb {
+  .b-breadcrumb {
     justify-content: center;
   }
 }
