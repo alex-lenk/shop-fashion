@@ -1,0 +1,87 @@
+.reg {
+  margin-bottom: 100px;
+}
+
+.reg__form-title {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222;
+}
+
+.reg__form-hint {
+  margin-top: 15px;
+  padding-bottom: 19px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.reg__form-radio {
+  display: flex;
+
+  label:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+
+.reg__info {
+  color: #000;
+  font-weight: 300;
+}
+
+.reg__info-title {
+  margin-bottom: 22px;
+  font-weight: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+.reg__info-text {
+  margin-bottom: 21px;
+}
+
+.reg__info-list li {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &::before {
+    width: 20px;
+    height: 16px;
+    margin-right: 22px;
+    display: inline-block;
+    background: url(../img/sprite/tick.svg) no-repeat center;
+    content: '';
+  }
+}
+
+@media (min-width: 576px) {
+  .reg__info {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reg {
+    display: flex;
+  }
+  .reg__form {
+    width: 33%;
+    padding-right: 15px;
+  }
+
+  .reg__info {
+    width: 58%;
+    margin-left: auto;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .reg__form {
+    margin-bottom: 70px;
+  }
+}
