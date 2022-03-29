@@ -1,4 +1,4 @@
-.top {
+.b-top {
   background-color: #222;
   position: fixed;
   top: 0;
@@ -7,37 +7,37 @@
   z-index: 5;
 }
 
-.top__inner {
+.b-top__inner {
   height: 75px;
   display: flex;
   align-items: center;
 }
 
-.top__logo {
+.b-top__logo {
   width: 44px;
   height: 38px;
 }
 
-.top__logo-img {
+.b-top__logo-img {
   max-height: 100%;
 }
 
-.top__search {
+.b-top__search {
   width: 26px;
   margin-right: auto;
 }
 
-.top__search-icon {
+.b-top__search-icon {
   width: 26px;
   height: 26px;
 }
 
-.top__login-icon {
+.b-top__login-icon {
   width: 29px;
   height: 29px;
 }
 
-.top__basket {
+.b-top__basket {
   margin-left: 33px;
   position: relative;
 
@@ -57,13 +57,13 @@
   }
 }
 
-.top__basket-icon {
+.b-top__basket-icon {
   width: 32px;
   height: 29px;
   fill: #E8E8E8;
 }
 
-.top__toggle-btn {
+.b-top__toggle-btn {
   width: 32px;
   height: 32px;
   padding: 0;
@@ -96,13 +96,13 @@
 }
 
 @media (min-width: 992px) {
-  .top__search {
+  .b-top__search {
     margin-left: 41px;
   }
-  .top__login {
+  .b-top__login {
     margin-left: 33px;
   }
-  .top__basket {
+  .b-top__basket {
     padding-right: 11px;
 
     &::after {
@@ -112,16 +112,16 @@
 }
 
 @media (min-width: 1620px) {
-  .top__inner {
+  .b-top__inner {
     position: relative;
   }
 }
 
 @media (max-width: 991px) {
-  .top__login {
+  .b-top__login {
     margin-left: 25px;
   }
-  .top__basket {
+  .b-top__basket {
     width: 12%;
     margin-left: 15px;
     text-align: center;
@@ -133,21 +133,21 @@
 }
 
 @media (max-width: 699px) {
-  .top__search {
+  .b-top__search {
     margin-left: 41px;
   }
-  .top__basket,
-  .top__login {
+  .b-top__basket,
+  .b-top__login {
     display: none;
   }
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  .top__logo {
+  .b-top__logo {
     width: 12%;
     text-align: center;
   }
-  .top__search {
+  .b-top__search {
     width: 12%;
     margin-left: 15px;
   }

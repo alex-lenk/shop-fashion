@@ -1,8 +1,8 @@
-.offers__item {
+.b-offers__item {
   position: relative;
 }
 
-.offers__box {
+.b-offers__box {
   background-color: rgba(#211616, .7);
   position: absolute;
   line-height: 27px;
@@ -15,23 +15,23 @@
   justify-content: center;
 }
 
-.offers__box-top {
+.b-offers__box-top {
   color: #fff;
 }
 
-.offers__box-bottom {
+.b-offers__box-bottom {
   font-weight: 700;
   font-size: 24px;
   color: $pink;
 }
 
 @media (min-width: 700px) {
-  .offers {
+  .b-offers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
-  .offers__item {
+  .b-offers__item {
     &:not(:last-of-type) {
       grid-row-start: 1;
     }
@@ -56,23 +56,23 @@
 }
 
 @media (min-width: 992px) {
-  .offers {
+  .b-offers {
     margin-bottom: 99px;
     gap: 30px;
   }
 }
 
 @media (max-width: 991px) {
-  .offers {
+  .b-offers {
     gap: 20px;
   }
 }
 
 @media (max-width: 699px) {
-  .offers {
+  .b-offers {
     margin-bottom: 67px;
   }
-  .offers__item {
+  .b-offers__item {
     &:not(:last-of-type) {
       margin-bottom: 32px;
     }
@@ -89,7 +89,7 @@
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  .offers {
+  .b-offers {
     margin-bottom: 67px;
   }
 }
