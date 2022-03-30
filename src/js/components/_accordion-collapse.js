@@ -10,5 +10,4 @@ export function _accordionCollapse(selector, selectorActive) {
     })
   }
 }
-
 /* END */

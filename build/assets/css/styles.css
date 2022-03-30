@@ -2068,18 +2068,6 @@ img {
   color: #6F6E6E;
 }
 
-/*.b-filter__open {
-  color: #EF5B70;
-
-  .b-filter__label-decor {
-    fill: #EF5B70;
-  }
-
-  + .b-filter__fly {
-    opacity: 1;
-    pointer-events: auto;
-  }
-}*/
 .dropdown-active .dropdown-menu {
   opacity: 1;
   pointer-events: auto;
