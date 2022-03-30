@@ -4,17 +4,20 @@ import gulp from 'gulp'
 const {series, watch, src, dest, lastRun} = gulp
 
 // Define "require"
-import { createRequire } from "module";
+import {createRequire} from "module";
+
 const require = createRequire(import.meta.url);
 
 import twig from 'gulp-twig'
 import browserSync from 'browser-sync'
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
+
 const sass = gulpSass(dartSass);
 import autoprefixer from 'gulp-autoprefixer'
 import rename from 'gulp-rename'
 import cleanCSS from 'gulp-clean-css'
+
 const uglifyEs = require('gulp-uglify-es').default
 import imagemin from 'gulp-imagemin'
 import newer from 'gulp-newer'
@@ -87,39 +90,41 @@ const scss = () => {
     .pipe(browserSync.stream())
 }
 
+const webpackConf = {
+  mode: "production",
+  entry: {
+    'scripts.min': pathFiles.js.entry
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
+  output: {
+    filename: "[name].js"
+  },
+  module: {
+    rules: [{
+      test: /\.js$/,
+      exclude: /^_(\w+)(\.js)$|node_modules/,
+      use: {
+        loader: 'babel-loader'
+      }
+    }]
+  },
+  optimization: {
+    minimize: false,
+    minimizer: [new TerserPlugin({
+      extractComments: false
+    })],
+  },
+  plugins: []
+}
+
 const js = () => {
   return src(pathFiles.js.src)
     .pipe(dest(pathFiles.js.build))
-    .pipe(webpackStream({
-      mode: "production",
-      entry: {
-        'scripts.min': pathFiles.js.entry
-      },
-      performance: {
-        hints: false,
-        maxEntrypointSize: 512000,
-        maxAssetSize: 512000
-      },
-      output: {
-        filename: "[name].js"
-      },
-      module: {
-        rules: [{
-          test: /\.js$/,
-          exclude: /^_(\w+)(\.js)$|node_modules/,
-          use: {
-            loader: 'babel-loader'
-          }
-        }]
-      },
-      optimization: {
-        minimize: true,
-        minimizer: [new TerserPlugin({
-          extractComments: false
-        })],
-      },
-      plugins: []
-    }), webpack)
+    .pipe(webpackStream(webpackConf, webpack))
     .pipe(dest(pathFiles.js.build))
     .pipe(browserSync.stream())
 }

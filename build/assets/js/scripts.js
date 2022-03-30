@@ -1,10 +1,18 @@
 'use strict'
-
 import {_accordionCollapse} from './components/_accordion-collapse.js'
+import {dropdown} from './components/dropdown.js'
 
 /* BEGIN: Инициализация аккордеона */
 _accordionCollapse('js-collapse', 'acc__active');
 /* END */
+
+/* BEGIN: Инициализация аккордеона */
+
+document.addEventListener('DOMContentLoaded', () => {
+  dropdown.call(dropdown)
+})
+/* END */
+
 
 /* BEGIN: Открытие и закрытие панели меню */
 function toggle() {
@@ -19,12 +27,12 @@ document.querySelector('.js-menu__close').addEventListener('click', () => toggle
 
 
 /* BEGIN: Открытие и закрытие фильтра в каталоге */
-let jsFilterLabel = document.querySelector('.js-filter__label')
+/*let jsFilterLabel = document.querySelector('.js-filter__label')
 if (jsFilterLabel) {
   jsFilterLabel.addEventListener('click', function () {
     this.classList.toggle('b-filter__open')
   })
-}
+}*/
 /* END */
 
 
