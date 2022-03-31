@@ -1,15 +1,15 @@
-.b-home__header {
+.home__header {
   margin-top: 75px;
   margin-bottom: 65px;
   background-color: #F1E4E6;
 }
 
-.b-home__header-inner {
+.home__header-inner {
   display: flex;
   align-items: center;
 }
 
-.b-home__title {
+.home__title {
   text-transform: uppercase;
   position: relative;
 
@@ -22,31 +22,31 @@
   }
 }
 
-.b-home__title-brand {
+.home__title-brand {
   font-weight: 900;
   display: block;
 }
 
-.b-home__title-hit {
+.home__title-hit {
   color: $pink;
 }
 
 @media (min-width: 700px) {
-  .b-home__header-inner {
+  .home__header-inner {
     background: url(../img/media/header-product.png) no-repeat 9px bottom;
     background-size: contain;
   }
-  .b-home__title::before {
+  .home__title::before {
     height: 92px;
   }
 }
 
 @media (min-width: 992px) {
 
-  .b-home__header-inner {
+  .home__header-inner {
     height: 764px;
   }
-  .b-home__title {
+  .home__title {
     font-size: 32px;
     line-height: 43px;
     margin: 0 9% 75px auto;
@@ -55,22 +55,22 @@
       top: -12px;
     }
   }
-  .b-home__title-brand {
+  .home__title-brand {
     font-size: 48px;
   }
 }
 
 @media (max-width: 991px) {
-  .b-home__title {
+  .home__title {
     margin-left: auto;
   }
 }
 
 @media (max-width: 699px) {
-  .b-home__header-inner {
+  .home__header-inner {
     height: 363px;
   }
-  .b-home__title {
+  .home__title {
     margin-bottom: 0;
     font-size: 20px;
     line-height: 30px;
@@ -81,20 +81,20 @@
       height: 61px;
     }
   }
-  .b-home__title-brand {
+  .home__title-brand {
     font-size: 38px;
   }
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  .b-home__header {
+  .home__header {
     margin-bottom: 20px;
   }
-  .b-home__header-inner {
+  .home__header-inner {
     height: 48vw;
     background-position: 18% 6px;
   }
-  .b-home__title {
+  .home__title {
     font-size: 3.14vw;
     line-height: 4.5vw;
 
@@ -102,7 +102,7 @@
       top: -1.2vh;
     }
   }
-  .b-home__title-brand {
+  .home__title-brand {
     font-size: 5.7vw;
   }
 }

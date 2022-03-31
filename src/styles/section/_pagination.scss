@@ -1,4 +1,4 @@
-.b-pagination {
+.pagination {
   padding: 0 12px;
   margin-bottom: 0;
   display: flex;
@@ -7,39 +7,39 @@
   list-style: none;
 }
 
-.b-pagination__item {
+.pagination__item {
   font-weight: 300;
   color: #C4C4C4;
 }
 
-.b-pagination__link {
+.pagination__link {
   padding: 9px 11px;
   display: block;
   font-weight: 300;
   color: inherit;
 }
 
-.b-pagination__link-current {
+.pagination__link-current {
   color: #EF5B70;
 }
 
-.b-pagination__ellipsis {
+.pagination__ellipsis {
   display: block;
   color: inherit;
   user-select: none;
 }
 
-.b-pagination__link-arrow {
+.pagination__link-arrow {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.b-pagination__link-prev,
-.b-pagination__link-next {
+.pagination__link-prev,
+.pagination__link-next {
   width: 14px;
   height: 14px;
 }
 
-.b-pagination__link-next {
+.pagination__link-next {
   transform: rotate(180deg);
 }

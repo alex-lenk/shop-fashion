@@ -1,4 +1,4 @@
-.b-form__field {
+.form__field {
   font-size: 13px;
   font-weight: 400;
   color: $blackColor;
@@ -23,7 +23,7 @@
   }
 }
 
-.b-form__placeholder {
+.form__placeholder {
   @include hidePlaceholder {
     color: $blackColor;
     opacity: 1;
@@ -38,6 +38,6 @@
   }
 }
 
-.b-form__group {
+.form__group {
   margin-bottom: 20px;
 }

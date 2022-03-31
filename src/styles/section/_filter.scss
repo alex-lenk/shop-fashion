@@ -1,9 +1,9 @@
-.b-filter {
+.filter {
   position: relative;
   z-index: 1;
 }
 
-.b-filter__label {
+.filter__label {
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
@@ -14,7 +14,7 @@
   z-index: 2;
 }
 
-.b-filter__fly {
+.filter__fly {
   padding: 49px 15px 15px;
   top: -15px;
   left: 0;
@@ -29,11 +29,11 @@
   transition: opacity .2s ease-in-out;
 }
 
-.b-filter__box:not(:last-of-type) {
+.filter__box:not(:last-of-type) {
   margin-bottom: 17px;
 }
 
-.b-filter__box-title {
+.filter__box-title {
   font-size: 14px;
   color: #EF5B70;
   border-bottom: 1px solid #EBEBEB;
@@ -50,17 +50,17 @@
   }
 }
 
-.b-filter__menu {
+.filter__menu {
   padding-top: 21px;
   padding-left: 16px;
   font-size: 14px;
 }
 
-.b-filter__menu-item:not(:last-child) {
+.filter__menu-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.b-filter__menu-link {
+.filter__menu-link {
   font-size: 14px;
   color: #6F6E6E;
 }
@@ -70,51 +70,51 @@
   pointer-events: auto;
 }
 
-.b-filter__label-text,
-.b-filter__label-decor {
+.filter__label-text,
+.filter__label-decor {
   pointer-events: none;
 }
 
 @media (min-width: 700px) {
-  .b-filter {
+  .filter {
     padding: 0 15px;
   }
-  .b-filter__label-decor {
+  .filter__label-decor {
     width: 15px;
     height: 15px;
     margin-left: 11px;
   }
-  .b-filter__fly {
+  .filter__fly {
     width: 100%;
   }
 }
 
 @media (max-width: 699px) {
-  .b-filter {
+  .filter {
     padding-left: 8px;
   }
-  .b-filter__label-text {
+  .filter__label-text {
     display: none
   }
-  .b-filter__label-decor {
+  .filter__label-decor {
     width: 38px;
     height: 38px;
   }
-  .b-filter__fly {
+  .filter__fly {
     min-width: 200px;
     padding-top: 70px;
   }
 }
 
 @media (max-width: 359px) {
-  .b-filter__label-decor {
+  .filter__label-decor {
     width: 26px;
     height: 26px;
   }
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  .b-filter {
+  .filter {
     width: 35%
   }
 }

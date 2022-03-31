@@ -1,19 +1,19 @@
-.b-footer {
+.footer {
   color: #FBFBFB;
   background-color: $blackColor;
 }
 
-.b-footer__social {
+.footer__social {
   padding-left: 0;
   list-style: none;
   display: flex;
 }
 
-.b-footer__social-item:not(:last-child) {
+.footer__social-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.b-footer__social-icon {
+.footer__social-icon {
   width: 32px;
   height: 32px;
   fill: $blackColor;
@@ -27,12 +27,12 @@
 }
 
 @media (min-width: 700px) {
-  .b-footer__inner {
+  .footer__inner {
     height: 79px;
     display: flex;
     align-items: center;
   }
-  .b-footer__social {
+  .footer__social {
     margin-bottom: 0;
     margin-left: auto;
     order: 1;
@@ -40,12 +40,12 @@
 }
 
 @media (max-width: 699px) {
-  .b-footer {
+  .footer {
     padding-top: 43px;
     padding-bottom: 43px;
     text-align: center;
   }
-  .b-footer__social {
+  .footer__social {
     margin-bottom: 40px;
     justify-content: center;
   }

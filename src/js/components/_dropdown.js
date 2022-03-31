@@ -1,4 +1,4 @@
-/* BEGIN: Аккордеон */
+/* BEGIN: dropdown */
 const dropdownEl = '.js__dropdown'
 const dropdownActive = 'dropdown-active'
 const dropdownToggleEl = 'js__dropdown-toggle'

@@ -1,9 +1,9 @@
-.b-subscribe__call {
+.subscribe__call {
   margin-right: auto;
   text-align: center;
 }
 
-.b-subscribe__call-quote {
+.subscribe__call-quote {
   margin-top: 30px;
   margin-bottom: 0;
   font-size: 20px;
@@ -11,23 +11,23 @@
   font-style: italic;
 }
 
-.b-subscribe__form-title {
+.subscribe__form-title {
   margin-bottom: 0;
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.b-subscribe__form-text {
+.subscribe__form-text {
   text-align: center;
   text-transform: uppercase;
 }
 
-.b-subscribe__form-wrap {
+.subscribe__form-wrap {
   display: flex;
 }
 
-.b-subscribe__form-input {
+.subscribe__form-input {
   padding: 8px 23px;
   height: 49px;
   border: 0;
@@ -41,7 +41,7 @@
   }
 }
 
-.b-subscribe__form-submit {
+.subscribe__form-submit {
   height: 49px;
   padding: 5px 20px;
   border-top-right-radius: 32px;
@@ -54,11 +54,11 @@
 }
 
 @media (min-width: 992px) {
-  .b-subscribe {
+  .subscribe {
     background: url(../img/media/bg-subscribe.jpg) no-repeat center;
     background-size: cover;
   }
-  .b-subscribe__inner {
+  .subscribe__inner {
     padding-top: 97px;
     padding-bottom: 137px;
     display: grid;
@@ -66,42 +66,42 @@
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .b-subscribe__form {
+  .subscribe__form {
     grid-column-start: 3;
   }
-  .b-subscribe__form-title {
+  .subscribe__form-title {
     margin-bottom: 4px;
   }
-  .b-subscribe__form-text {
+  .subscribe__form-text {
     margin-bottom: 25px;
     font-size: 18px;
   }
 }
 
 @media (max-width: 991px) {
-  .b-subscribe {
+  .subscribe {
     background: url(../img/media/bg-subscribe-m.jpg) no-repeat center;
     background-size: cover;
   }
-  .b-subscribe__inner {
+  .subscribe__inner {
     padding-top: 65px;
     padding-bottom: 103px;
   }
-  .b-subscribe__call {
+  .subscribe__call {
     margin-left: auto;
     margin-bottom: 69px;
   }
-  .b-subscribe__form-text {
+  .subscribe__form-text {
     margin-bottom: 25px;
     font-size: 14px;
   }
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  .b-subscribe__call {
+  .subscribe__call {
     width: 50%;
   }
-  .b-subscribe__form {
+  .subscribe__form {
     width: 50%;
     margin: 0 auto;
   }

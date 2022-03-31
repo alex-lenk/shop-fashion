@@ -1,8 +1,8 @@
-.b-reg {
+.reg {
   margin-bottom: 100px;
 }
 
-.b-reg__form-title {
+.reg__form-title {
   margin-bottom: 20px;
   font-weight: 300;
   font-size: 16px;
@@ -10,7 +10,7 @@
   color: #222;
 }
 
-.b-reg__form-hint {
+.reg__form-hint {
   margin-top: 15px;
   padding-bottom: 19px;
   font-weight: 300;
@@ -19,7 +19,7 @@
   color: #B1B1B1;
 }
 
-.b-reg__form-radio {
+.reg__form-radio {
   display: flex;
 
   label:not(:last-of-type) {
@@ -27,23 +27,23 @@
   }
 }
 
-.b-reg__info {
+.reg__info {
   color: #000;
   font-weight: 300;
 }
 
-.b-reg__info-title {
+.reg__info-title {
   margin-bottom: 22px;
   font-weight: inherit;
   font-size: inherit;
   text-transform: uppercase;
 }
 
-.b-reg__info-text {
+.reg__info-text {
   margin-bottom: 21px;
 }
 
-.b-reg__info-item {
+.reg__info-item {
   &:not(:last-child) {
     margin-bottom: 12px;
   }
@@ -59,21 +59,21 @@
 }
 
 @media (min-width: 576px) {
-  .b-reg__info {
+  .reg__info {
     font-size: 24px;
   }
 }
 
 @media (min-width: 768px) {
-  .b-reg {
+  .reg {
     display: flex;
   }
-  .b-reg__form {
+  .reg__form {
     width: 33%;
     padding-right: 15px;
   }
 
-  .b-reg__info {
+  .reg__info {
     width: 58%;
     margin-left: auto;
   }
@@ -81,7 +81,7 @@
 
 
 @media (max-width: 767px) {
-  .b-reg__form {
+  .reg__form {
     margin-bottom: 70px;
   }
 }

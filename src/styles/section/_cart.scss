@@ -1,4 +1,4 @@
-.b-cart__aside-title {
+.cart__aside-title {
   margin-bottom: 20px;
   font-weight: 300;
   font-size: 16px;
@@ -7,12 +7,12 @@
   text-transform: uppercase;
 }
 
-.b-cart__total {
+.cart__total {
   padding: 39px 34px;
   background: #F5F3F3;
 }
 
-.b-cart__total-sub {
+.cart__total-sub {
   margin-bottom: 12px;
   font-size: 11px;
   line-height: 13px;
@@ -20,11 +20,11 @@
   display: flex;
 }
 
-.b-cart__total-label {
+.cart__total-label {
   margin-right: 15px;
 }
 
-.b-cart__total-grand {
+.cart__total-grand {
   margin-bottom: 39px;
   font-weight: 300;
   text-transform: uppercase;
@@ -32,16 +32,16 @@
   display: flex;
 }
 
-.b-cart__total-cost {
+.cart__total-cost {
   margin-left: 15px;
   color: $pink;
 }
 
-.b-cart__products {
+.cart__products {
   margin-bottom: 72px;
 }
 
-.b-cart__products-item {
+.cart__products-item {
   padding-right: 12px;
   position: relative;
   display: flex;
@@ -52,37 +52,37 @@
   }
 }
 
-.b-cart__products-media {
+.cart__products-media {
   flex-shrink: 0;
 }
 
-.b-cart__products-content {
+.cart__products-content {
   padding: 22px 31px;
 }
 
-.b-cart__products-title {
+.cart__products-title {
   font-weight: 400;
   text-transform: uppercase;
   color: #222;
 }
 
-.b-cart__option {
+.cart__option {
   margin-bottom: 6px;
 }
 
-.b-cart__option-label {
+.cart__option-label {
   color: #575757;
 }
 
-.b-cart__option-cost {
+.cart__option-cost {
   color: #EF5B70;
 }
 
-.b-cart__option-value {
+.cart__option-value {
   color: #6F6E6E;
 }
 
-.b-cart__input {
+.cart__input {
   width: 44px;
   height: 25px;
   padding: 2px 0 1px;
@@ -97,7 +97,7 @@
   background-color: #fff;
 }
 
-.b-cart__close {
+.cart__close {
   width: 32px;
   height: 32px;
   position: absolute;
@@ -108,12 +108,12 @@
   padding: 0;
   display: flex;
 
-  &:hover .b-cart__close-icon {
+  &:hover .cart__close-icon {
     fill: $pink;
   }
 }
 
-.b-cart__close-icon {
+.cart__close-icon {
   width: 19px;
   height: 19px;
   margin: auto;
@@ -121,7 +121,7 @@
   transition: fill .3s ease-in-out;
 }
 
-.b-cart__bottom-btn {
+.cart__bottom-btn {
   height: 50px;
   border: 1px solid #A4A4A4;
   font-weight: 400;
@@ -137,20 +137,20 @@
 }
 
 @media (min-width: 700px) {
-  .b-cart__products-title {
+  .cart__products-title {
     margin-bottom: 42px;
     font-size: 24px;
     line-height: 29px;
   }
-  .b-cart__option {
+  .cart__option {
     font-size: 22px;
     line-height: 26px;
   }
-  .b-cart__bottom {
+  .cart__bottom {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .b-cart__bottom-btn {
+  .cart__bottom-btn {
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
@@ -158,74 +158,74 @@
 }
 
 @media (min-width: 992px) {
-  .b-cart {
+  .cart {
     display: flex;
   }
-  .b-cart__aside {
+  .cart__aside {
     margin-left: auto;
     padding-top: 17px;
   }
-  .b-cart__total {
+  .cart__total {
     margin-top: 57px;
   }
 }
 
 @media (min-width: 1200px) {
-  .b-cart {
+  .cart {
     margin-bottom: 128px;
   }
 
-  .b-cart__content {
+  .cart__content {
     padding-right: 12px;
     width: 58.33333%;
   }
 
-  .b-cart__aside {
+  .cart__aside {
     padding-left: 20px;
     width: 33.33333%;
   }
 }
 
 @media (max-width: 1199px) {
-  .b-cart {
+  .cart {
     margin-bottom: 90px;
   }
 }
 
 @media (max-width: 991px) {
-  .b-cart__content {
+  .cart__content {
     margin-bottom: 62px
   }
-  .b-cart__total {
+  .cart__total {
     margin-top: 37px;
   }
 }
 
 @media (max-width: 699px) {
-  .b-cart__products-media {
+  .cart__products-media {
     width: 39%;
   }
-  .b-cart__products-title {
+  .cart__products-title {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 19px;
   }
-  .b-cart__option {
+  .cart__option {
     font-size: 14px;
     line-height: 17px;
   }
-  .b-cart__bottom {
+  .cart__bottom {
     display: flex;
     justify-content: space-between;
   }
-  .b-cart__bottom-btn {
+  .cart__bottom-btn {
     width: 48%;
     font-size: 12px;
   }
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  .b-cart__aside {
+  .cart__aside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -233,10 +233,10 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .b-cart__content {
+  .cart__content {
     width: 60%;
   }
-  .b-cart__aside {
+  .cart__aside {
     width: 37%;
   }
 }

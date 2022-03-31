@@ -1,20 +1,20 @@
-.b-featured {
+.featured {
   background-color: $blackColor;
 }
 
-.b-featured__box {
+.featured__box {
   padding: 0 20px;
   text-align: center;
 }
 
-.b-featured__icon {
+.featured__icon {
   width: 48px;
   height: 63px;
   margin: 0 auto;
   display: block;
 }
 
-.b-featured__title {
+.featured__title {
   margin-bottom: 16px;
   font-size: 20px;
   line-height: 24px;
@@ -22,7 +22,7 @@
   font-weight: 400;
 }
 
-.b-featured__text {
+.featured__text {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -30,7 +30,7 @@
 }
 
 @media (min-width: 700px) {
-  .b-featured__inner {
+  .featured__inner {
     padding-top: 103px;
     padding-bottom: 103px;
     display: grid;
@@ -40,11 +40,11 @@
 }
 
 @media (max-width: 699px) {
-  .b-featured__inner {
+  .featured__inner {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .b-featured__box:not(:last-of-type) {
+  .featured__box:not(:last-of-type) {
     margin-bottom: 42px;
   }
 }

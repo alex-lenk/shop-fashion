@@ -1,4 +1,4 @@
-.b-custom__control {
+.custom__control {
   line-height: 1;
   margin-bottom: 0;
   position: relative;
@@ -16,7 +16,7 @@
   }
 }
 
-.b-custom__control-input {
+.custom__control-input {
   position: absolute;
   left: 0;
   z-index: -1;
@@ -25,7 +25,7 @@
   opacity: 0;
 
   &:checked ~ {
-    .b-custom__control-label {
+    .custom__control-label {
       color: $blackColor;
 
       &::before,
@@ -39,12 +39,12 @@
     }
   }
 
-  &:disabled ~ .b-custom__control-label {
+  &:disabled ~ .custom__control-label {
     opacity: .5;
   }
 }
 
-.b-custom__control-label {
+.custom__control-label {
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -74,7 +74,7 @@
   }
 }
 
-.b-custom__radio {
+.custom__radio {
   margin-left: 25px;
 
   &::before {
@@ -96,7 +96,7 @@
   }
 }
 
-.b-custom__checkbox {
+.custom__checkbox {
   margin-left: 23px;
 
   &::after {

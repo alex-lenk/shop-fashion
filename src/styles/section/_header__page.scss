@@ -1,14 +1,14 @@
-.b-header__page {
+.header__page {
   margin-top: 75px;
   background-color: #F8F3F4;
 }
 
-.b-header__page-inner {
+.header__page-inner {
   padding-top: 26px;
   padding-bottom: 26px;
 }
 
-.b-header__page-title {
+.header__page-title {
   margin-bottom: 0;
   font-size: 24px;
   line-height: 29px;
@@ -19,26 +19,26 @@
 }
 
 @media (min-width: 700px) {
-  .b-header__page {
+  .header__page {
     margin-bottom: 51px;
   }
-  .b-header__page-inner {
+  .header__page-inner {
     display: flex;
     align-items: center;
   }
-  .b-header__page-inner {
+  .header__page-inner {
     min-height: 148px;
   }
 }
 
 @media (max-width: 699px) {
-  .b-header__page {
+  .header__page {
     margin-bottom: 17px;
   }
-  .b-header__page-inner {
+  .header__page-inner {
     text-align: center;
   }
-  .b-header__page-title {
+  .header__page-title {
     min-height: 50px;
     margin-bottom: 10px;
   }
